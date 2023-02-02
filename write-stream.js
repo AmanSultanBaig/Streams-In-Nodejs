@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const writeStream = fs.createWriteStream("input.txt");
-writeStream.write("Hello World");
+writeStream.write("Hello World", "utf8");
 
 writeStream.end();
 
